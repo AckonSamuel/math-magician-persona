@@ -9,7 +9,7 @@ class Calculator extends React.Component {
   }
   render() {
     return (
-      <div class = "num"> {integers.map((num) => <div>{num}</div>)}</div>
+      <div class = "num"> {integers.map((num, i) => i % 3 == 0 ? <div>{num}</div> : <div class = "odd">{num}</div>)}</div>
     );
   }
 }
