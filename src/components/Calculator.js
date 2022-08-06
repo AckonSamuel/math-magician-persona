@@ -9,7 +9,7 @@ class Calculator extends React.Component {
   }
   render() {
     return (
-      <h1> {integers.join(', ')}</h1>
+      <div>{integers.map((num) => <div>{num}</div>)}</div>
     );
   }
 }
